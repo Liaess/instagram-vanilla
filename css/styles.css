@@ -234,10 +234,14 @@ a {
 
 
 
-
+.fixedside{
+    position: relative;
+    margin-right: 250px;
+}
 .sidebox{
     margin-top: 38px;
     width: 293px;
+    position: fixed;
 }
 .sidebox h1{
     font-size: 12px;
@@ -321,7 +325,7 @@ a {
 
 
 @media(max-width:935px){
-    .sidebox{
+    .fixedside{
         display: none;
     }
 }
