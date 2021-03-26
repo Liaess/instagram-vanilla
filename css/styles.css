@@ -1,5 +1,5 @@
 body{
-    background-color: #fafafa;
+    background-color: #fff;
     font-family: 'Roboto', sans-serif;
 }
 a {
@@ -18,16 +18,16 @@ a {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    background-color: white;
-    left: calc((100% - 935px) / 2);
-    right: calc((100% - 935px) / 2);
+    background-color: #fff;
+    left: calc((100% - 935px) / 4);
+    right: calc((100% - 935px) / 4);
     top: 0;
     z-index: 10;
 }
 .itens-top {
     width: 215px;
     height: 28px;
-    background-color: rgb(255, 255, 255); /*modificar a cor depois*/
+    background-color: #fff;
     border-radius: 3px;
     display: flex;
 }
@@ -36,10 +36,11 @@ a {
     width: 215px;
     height: 28px;
     margin-right:214px;
-    background-color:#fafafa;
+    background-color:#fff;
     background-position: center;
     border: 2px solid #dbdbdb;
     border-radius: 3px;
+    text-align: center;
 }
 .icon-logo {
     margin-right: 0;
@@ -66,10 +67,8 @@ a {
 
 
 
-
 .content {
     width: 935px;
-    height: 3000px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 55px;
@@ -80,8 +79,9 @@ a {
     display: flex;
     flex-direction: column;
     width: auto;
-    height: 118px;
     margin-top: 34px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 
@@ -109,6 +109,7 @@ a {
     right: 0;
     z-index: 3;
     margin-top: 30px;
+    color: white;
 }
 .stories1:last-child{
     position: relative;
@@ -194,9 +195,6 @@ a {
     height: 612px;
     margin-bottom: 3px;
 }
-.totalright{
-    margin-left: 400px;
-}
 .comentimg{
     width: 20px;
     height: 20px;
@@ -245,8 +243,6 @@ a {
 .sidebox{
     margin-top: 38px;
     width: 293px;
-    height: 350px;
-
 }
 .sidebox h1{
     font-size: 12px;
@@ -323,3 +319,8 @@ a {
 }
 
 
+@media(max-width:935px){
+    .sidebox{
+        display: none;
+    }
+}
